@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoanUnited - Your Trusted Loan Partner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <i class="fas fa-hand-holding-usd"></i>
+            LoanUnited
+          </div>
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Loan Options</a></li>
+              <li><a href="#application">Apply Now</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Find the Perfect Loan for Your Needs</h1>
+          <p>
+            With competitive rates and flexible terms, we make borrowing simple
+            and affordable
+          </p>
+          <div>
+            <a href="#application" class="btn">Apply Now</a>
+            <a href="#services" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Loan Options</h2>
+          <p>
+            We offer a variety of loan products to meet your financial needs
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-home"></i>
+            <h3>Mortgage Loans</h3>
+            <p>
+              Buy your dream home with our competitive mortgage rates and
+              flexible payment options.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-car"></i>
+            <h3>Auto Loans</h3>
+            <p>
+              Drive away in the car you've always wanted with our low-interest
+              auto loans.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Student Loans</h3>
+            <p>
+              Invest in your future with education financing options tailored to
+              your needs.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-credit-card"></i>
+            <h3>Personal Loans</h3>
+            <p>
+              Get the funds you need for life's unexpected expenses or special
+              occasions.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-building"></i>
+            <h3>Business Loans</h3>
+            <p>
+              Grow your business with our flexible financing solutions for
+              entrepreneurs.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-balance-scale"></i>
+            <h3>Debt Consolidation</h3>
+            <p>
+              Simplify your finances by combining multiple debts into one
+              manageable loan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application" id="application">
+      <div class="container">
+        <div class="section-title">
+          <h2>Loan Application</h2>
+          <p>Complete our simple application to get started</p>
+        </div>
+        <div class="form-container">
+          <form id="loan-application">
+            <!-- Step 1: Personal Information -->
+            <div class="form-step active" id="step-1">
+              <h3>Personal Information</h3>
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required />
+              </div>
+              <div class="form-navigation">
+                <button type="button" class="btn" onclick="nextStep(2)">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Residential Information -->
+            <div class="form-step" id="step-2">
+              <h3>Residential Information</h3>
+              <div class="form-group">
+                <label for="address">Street Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Enter your street address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  placeholder="Enter your city"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input
+                  type="text"
+                  id="state"
+                  placeholder="Enter your state"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="zipcode">ZIP Code</label>
+                <input
+                  type="text"
+                  id="zipcode"
+                  placeholder="Enter your ZIP code"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="housing">Housing Status</label>
+                <select id="housing" required>
+                  <option value="">Select your housing status</option>
+                  <option value="own">Own</option>
+                  <option value="rent">Rent</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-navigation">
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="prevStep(1)"
+                >
+                  Previous
+                </button>
+                <button type="button" class="btn" onclick="nextStep(3)">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Employment Information -->
+            <div class="form-step" id="step-3">
+              <h3>Employment Information</h3>
+              <div class="form-group">
+                <label for="employment-status">Employment Status</label>
+                <select id="employment-status" required>
+                  <option value="">Select your employment status</option>
+                  <option value="employed">Employed</option>
+                  <option value="self-employed">Self-Employed</option>
+                  <option value="unemployed">Unemployed</option>
+                  <option value="retired">Retired</option>
+                  <option value="student">Student</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="employer">Employer Name</label>
+                <input
+                  type="text"
+                  id="employer"
+                  placeholder="Enter your employer's name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="occupation">Occupation</label>
+                <input
+                  type="text"
+                  id="occupation"
+                  placeholder="Enter your occupation"
+                />
+              </div>
+              <div class="form-group">
+                <label for="income">Annual Income ($)</label>
+                <input
+                  type="number"
+                  id="income"
+                  placeholder="Enter your annual income"
+                  required
+                />
+              </div>
+              <div class="form-navigation">
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="prevStep(2)"
+                >
+                  Previous
+                </button>
+                <button type="button" class="btn" onclick="nextStep(4)">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Loan Details -->
+            <div class="form-step" id="step-4">
+              <h3>Loan Details</h3>
+              <div class="form-group">
+                <label for="loan-type">Loan Type</label>
+                <select id="loan-type" required>
+                  <option value="">Select a loan type</option>
+                  <option value="mortgage">Mortgage Loan</option>
+                  <option value="auto">Auto Loan</option>
+                  <option value="personal">Personal Loan</option>
+                  <option value="student">Student Loan</option>
+                  <option value="business">Business Loan</option>
+                  <option value="debt">Debt Consolidation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="loan-amount">Loan Amount ($)</label>
+                <input
+                  type="number"
+                  id="loan-amount"
+                  placeholder="Enter desired loan amount"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="loan-purpose">Loan Purpose</label>
+                <textarea
+                  id="loan-purpose"
+                  placeholder="Describe what you need the loan for"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-navigation">
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="prevStep(3)"
+                >
+                  Previous
+                </button>
+                <button type="button" class="btn" onclick="nextStep(5)">
+                  Next
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 5: Document Upload -->
+            <div class="form-step" id="step-5">
+              <h3>Document Upload</h3>
+              <p>Please upload photos of your ID card (both front and back)</p>
+
+              <div
+                class="file-upload"
+                onclick="document.getElementById('id-front').click()"
+              >
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Click to upload ID Front Side</p>
+                <input
+                  type="file"
+                  id="id-front"
+                  accept="image/*"
+                  style="display: none"
+                  onchange="previewImage(this, 'front-preview')"
+                />
+              </div>
+
+              <div
+                class="file-upload"
+                onclick="document.getElementById('id-back').click()"
+              >
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Click to upload ID Back Side</p>
+                <input
+                  type="file"
+                  id="id-back"
+                  accept="image/*"
+                  style="display: none"
+                  onchange="previewImage(this, 'back-preview')"
+                />
+              </div>
+
+              <div class="file-preview">
+                <img
+                  id="front-preview"
+                  src=""
+                  alt="Front ID Preview"
+                  style="display: none"
+                />
+                <img
+                  id="back-preview"
+                  src=""
+                  alt="Back ID Preview"
+                  style="display: none"
+                />
+              </div>
+
+              <div class="form-navigation">
+                <button
+                  type="button"
+                  class="btn btn-outline"
+                  onclick="prevStep(4)"
+                >
+                  Previous
+                </button>
+                <button type="submit" class="btn">Submit Application</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>Customer Testimonials</h2>
+          <p>
+            Hear what our customers have to say about their experience with
+            LoanUnited
+          </p>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "LoanUnited made the mortgage process so simple. I got a great
+              rate and was able to close on my new home faster than I expected."
+            </p>
+            <div class="testimonial-author">
+              <img src="" alt="Eugene Ome" />
+              <div class="author-details">
+                <h4>Eugene Ome</h4>
+                <p>Homeowner</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "I was struggling with high-interest credit card debt. LoanUnited
+              helped me consolidate everything into one manageable payment with
+              a much lower rate."
+            </p>
+            <div class="testimonial-author">
+              <img src=" " alt="Michael Wambui" />
+              <div class="author-details">
+                <h4>Michael Waambui</h4>
+                <p>Debt Consolidation Customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The online application was so easy to complete, and I was
+              approved for my auto loan within hours. Highly recommend
+              LoanUnited!"
+            </p>
+            <div class="testimonial-author">
+              <img src="" alt="Emily Oluoch" />
+              <div class="author-details">
+                <h4>Emily Oluoch</h4>
+                <p>Auto Loan Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>LoanUnited</h3>
+            <p>
+              Your trusted partner for all your lending needs. We're committed
+              to helping you find the right financial solution.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Loan Options</a></li>
+              <li><a href="#application">Apply Now</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Roysambu,Nairobi Kenya
+              </li>
+              <li><i class="fas fa-phone"></i> +254 759 285449</li>
+              <li><i class="fas fa-envelope"></i> info@loanunited.com</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2025 LoanUnited. All rights reserved. |
+            <a href="#" style="color: #ccc">Privacy Policy</a> |
+            <a href="#" style="color: #ccc">Terms of Use</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
